@@ -1,0 +1,21 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post2blkhol {
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.post2blkhol2 {
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 15px 25px 5px;
+}

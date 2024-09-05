@@ -1,7 +1,7 @@
 const backgroundImage = document.querySelector('.background-image');
 const nasaImg = document.querySelector('.nasa-img');
 const triggerHeight = 1250;
-const parallaxTriggerHeight = 2899;
+const parallaxTriggerHeight = 3075;
 
 window.addEventListener('scroll', function() {
     const scrollPosition = window.scrollY;

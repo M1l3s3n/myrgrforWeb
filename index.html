@@ -11,9 +11,10 @@
     <title>Таємниці космосу</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="/javascript/map.js"></script>
-    <script src="javascript/learnmore.js"></script>
+    <script src="/javascript/learnmore.js"></script>
     <script src="/javascript/menu.js"></script>
     <script src="/javascript/toTop.js"></script>
+    <script src="/javascript/timer.js"></script>
 </head>
 <body>
     
@@ -53,11 +54,21 @@
         </div>
     </section>
 
+    <section class="timer">
+        <div id="countdown">
+            <span id="days"></span> :
+            <span id="hours"></span> :
+            <span id="minutes"></span> :
+            <span id="seconds"></span>
+        </div>       
+        <div class="timertext">Днів до дня космонавтики!</div>   
+    </section>
+
     <section class="inner-container">
         <div class="additional-container">
-            <a class="allposts" href="/allposts/allposts.html">
+            <div class="allposts">
                 <p class="poststext">Всі Статті</p>
-            </a>
+            </div>
             <div class="posts">
                 <a href="/post/post1.html" class="post post1">
                     <p>Подорож до Марсу</p>
@@ -95,27 +106,27 @@
         </div>
     </section>
     
-    <section class="split-container">
+    <section id="split-container" class="split-container">
         <div class="left-box">
             <div class="inner-box">
-                <div class="sub-box">ПРОЕКТИ</div> 
+                <div class="sub-box">Цікавинки космосу</div> 
                 <div class="sub-box">
-                    <a href="" class="sub-sub-box">
-                        <p>Проект 1</p>
+                    <a href="http://www.streetastronomy.com.ua/articles/teleskopy-novogo-pokolinnya-yakoyu-bude-astronomiya-majbutnogo.html" class="sub-sub-box">
+                        <p>№1</p>
                         <p>Телескопи майбутнього</p>
                     </a>
-                    <a href="" class="sub-sub-box">
-                        <p>Проект 2</p>
+                    <a href="https://www.unian.ua/science/kilcya-saturna-zniknut-z-polya-zoru-zemlyan-vcheni-nazvali-datu-12446265.html" class="sub-sub-box">
+                        <p>№2</p>
                         <p>Відкриття нових планет</p>
                     </a>
                 </div> 
                 <div class="sub-box">
-                    <a href="" class="sub-sub-box">
-                        <p>Проект 3</p>
+                    <a href="https://mindthegraph.com/blog/uk/%D0%BF%D0%BE%D0%BB%D1%8C%D0%BE%D1%82%D0%B8-%D0%BD%D0%B0-%D0%BC%D1%96%D1%81%D1%8F%D1%86%D1%8C/" class="sub-sub-box">
+                        <p>№3</p>
                         <p>Місії на Місяць</p>
                     </a>
-                    <a href="" class="sub-sub-box">
-                        <p>Проект 4</p>
+                    <a href="https://www.bbc.com/ukrainian/vert_fut/2015/10/151013_vert_fur_the_everyday_acts_of_apollo_astronauts_vp" class="sub-sub-box">
+                        <p>№4</p>
                         <p>Життя в космосі</p>
                     </a>
                 </div>
