@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Krub:wght@300&family=PT+Sans:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <title>Таємниці космосу</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/javascript/map.js"></script>
+    <script src="javascript/learnmore.js"></script>
+    <script src="/javascript/menu.js"></script>
+    <script src="/javascript/toTop.js"></script>
+</head>
+<body>
+    
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+    
+    <header class="header" id="header">
+        <link rel="icon" type="image/png" href="">
+        <img id="logo" src="/images/icon.png">
+        <a id="headername" href="index.html">Таємниці космосу</a>
+        <nav class="header-container">
+            <button class="main-button" id="dropdown-btn">Меню</button>
+            <div class="dropdown-content" id="dropdown-content">
+                <button class="button-1">Статті</button>
+                <button class="button-2">Проекти</button>
+                <button class="button-3">Мапа</button>
+            </div>
+        </nav>
+    </header>    
+    
+    <div class="background-image"></div>
+    <div class="nasa-img"></div>
+
+    <section class="container">
+        <div class="content-container">
+            <div class="large-text">
+                <p>ЛАСКАВО ПРОСИМО ДО <br>
+                    Таємниці космосу</p>
+            </div>
+            <div class="small-text">
+                <p>Відкрийте для себе таємниці всесвіту,<br>
+                    досліджуючи планети, зірки,<br>
+                    та галактики, що чекають на своїх відкривачів.</p>
+            </div>
+            <div class="button-container">
+                <button class="scroll-to-contact btn-16">Дізнатись більше!</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="inner-container">
+        <div class="additional-container">
+            <a class="allposts" href="/allposts/allposts.html">
+                <p class="poststext">Всі Статті</p>
+            </a>
+            <div class="posts">
+                <a href="/post/post1.html" class="post post1">
+                    <p>Подорож до Марсу</p>
+                    <img src="/images/mars.jpg">
+                    <div class="postauthor">Автор: Space Explorer</div>
+                    <div class="postinfo">
+                        <h4>10 січ. 2024 р.</h4>
+                    </div>
+                </a>
+                <a href="/post/post2.html" class="post post2">
+                    <p>Загадки Чорних дір</p>
+                    <img src="/images/black_hole.jpg">
+                    <div class="postauthor">Автор: Space Explorer</div>
+                    <div class="postinfo">
+                        <h4>11 січ. 2024 р.</h4>
+                    </div>
+                </a>
+                <a href="/post/post3.html" class="post post3">
+                    <p>Найвіддаленіші галактики</p>
+                    <img src="/images/galaxy.jpg">
+                    <div class="postauthor">Автор: Space Explorer</div>
+                    <div class="postinfo">
+                        <h4>12 січ. 2024 р.</h4>
+                    </div>
+                </a>
+                <a href="/post/post4.html" class="post post4">
+                    <p>Факти про сонце</p>
+                    <img src="/images/sun.jpg">
+                    <div class="postauthor">Автор: Space Explorer</div>
+                    <div class="postinfo">
+                        <h4>13 січ. 2024 р.</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="split-container">
+        <div class="left-box">
+            <div class="inner-box">
+                <div class="sub-box">ПРОЕКТИ</div> 
+                <div class="sub-box">
+                    <a href="" class="sub-sub-box">
+                        <p>Проект 1</p>
+                        <p>Телескопи майбутнього</p>
+                    </a>
+                    <a href="" class="sub-sub-box">
+                        <p>Проект 2</p>
+                        <p>Відкриття нових планет</p>
+                    </a>
+                </div> 
+                <div class="sub-box">
+                    <a href="" class="sub-sub-box">
+                        <p>Проект 3</p>
+                        <p>Місії на Місяць</p>
+                    </a>
+                    <a href="" class="sub-sub-box">
+                        <p>Проект 4</p>
+                        <p>Життя в космосі</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right-box">
+            <img id="slideshow" src="/images/stars1.jpg" alt="Зоряне небо">
+            <img id="slideshow-back" src="/images/stars2.jpg" alt="Зоряне небо">
+        </div>     
+    </section>
+
+    <section class="nasa">
+        <div class="nasainfo">
+            <div class="nasatext">
+                <p class="sentence">NASA, як вірний провідник в безмежному космосі, розкриває таємниці Всесвіту.</p>
+                <p class="sentence">Від моменту, коли астронавти вперше ступили на Місяць, до досягнень наших </p>
+                <p class="sentence">роботизованих роверов на Марсі, і від захоплюючих знімків телескопа Hubble до </p>
+                <p class="sentence">революційних місій до Сонця — NASA постійно розширює горизонти людських знань,</p>
+                <p class="sentence">розкриваючи нові секрети космічного простору.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="maptext">Розташування штаб-квартири НАСА</div>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>©2024 by Таємниці космосу</p>
+        </div>
+    </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/javascript/stars.js"></script>
+<script src="/javascript/site.js"></script>
+<script src="javascript/nasa.js"></script>
+<script src="/javascript/nasatext.js"></script>
+</body>
+</html>
