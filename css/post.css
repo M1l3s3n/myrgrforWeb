@@ -74,9 +74,9 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    width: 1000px;
+    width: 90%;
+    max-width: 1000px;
     padding: 10px;
-    /* background-color: rgba(0, 0, 0, 0.5); */
     margin-top: 10px;
     margin-bottom: 10px;
 } 
@@ -84,24 +84,25 @@ body {
 .media {
     display: flex;
     justify-content: center;
-    min-width: 360px;
-    height: 460px;
-    margin-bottom: 10px;
+    height: 40vh;
+    margin-bottom: 0.521vw;
     border-radius: 15px;
-
 }
 
 .video {
+    width: 100%;
+    height: 100%;
     border: none;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .general {
     display: flex;
-    min-width: 360px;
-    height: 1540px; /*тут пофіксити потім */
-    margin-top: 10px;
-    margin-bottom: 10px;
+    min-width: 18.75vw;
+    height: auto; /*тут пофіксити потім */
+    margin-top: 0.521vw;
+    margin-bottom: 0.521vw;
     border-radius: 15px;
     background-color: rgb(12, 12, 12);
 }
@@ -122,7 +123,7 @@ body {
     color: rgb(255, 255, 255);
     max-width: 50%;
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 500;
 }
 
@@ -132,7 +133,7 @@ body {
     text-decoration: none;
     max-width: 50%;
     margin-right: 10px;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 footer {
@@ -151,36 +152,8 @@ footer {
     display: inline-block;
 }
 
-@media only screen and (max-width: 767px) {
-    .header {
-        height: 60px;
-        justify-content: center;
-    }
-
-    #headername {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .main {
-        margin: auto;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .allposts,
-    .general,
-    .lastposts {
-        margin: 10px;
-        margin-top: 0;
-    }
-
-    .lastposts {
-        margin-top: 10px;
-    }
-
-    footer {
-        height: auto;
-        padding: 10px 0;
+@media only screen and (max-width: 430px) {
+    body {
+    min-width: 430px;
     }
 }
