@@ -137,17 +137,16 @@
     }
 
     .posts {
-        flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         width: auto;
         height: auto;
-        height: 100%;
+        max-width: 780px;
     }
 
     .post {
-        width: 350px;
-        height: 350px;
+        max-width: 350px;
+        max-height: 350px;
         flex-basis: auto;
         margin: 15px 0;
     }
