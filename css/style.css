@@ -127,6 +127,7 @@ body {
     position: relative;
     width: 100%;
     height: 895px;
+    max-height: 895px;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -184,14 +185,16 @@ body {
 }
 
 .background-image {
+    margin-top: 5px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    min-height: 990px;
     background-image: url('/images/background.jpg');
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center;
     z-index: -1; 
     opacity: 0.9;
     filter: brightness(0.5);
@@ -377,18 +380,16 @@ body {
 
 .split-container {
     display: flex;
-    min-height: 810px;
-    max-height: 810px;
+    height: 810px;
 }
 
 .left-box,
 .right-box {
     flex: 2;
-    min-width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: auto;
 }
 
 .left-box {
@@ -506,6 +507,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    min-height: 999px;
     background-image: url('/images/nasa.jpg');
     background-size: cover;
     background-position: 50% 50%;
@@ -580,28 +582,47 @@ footer {
     filter: hue-rotate(145deg); 
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 430px) {
+
+    body {
+        min-width: 430px;
+    }
+    
     .header {
+        display: flex;
+        width: 100%;
         height: 60px;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        margin: auto;
+    }
+    
+    #logo:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        height: 45px;
+        width: 45px;
+        margin: auto;
     }
 
     #headername {
-        margin-left: 0;
-        margin-right: auto;
-        text-align: center;
+        display: flex;
+        margin: auto;
+        justify-content: center;
     }
 
     .header-container {
         display: flex;
-        justify-content: flex-end;
-        max-width: 1200px;
-        margin-right: 0;
+        margin: auto;
     }
 
     .dropdown-content {
         display: none;
-        margin-top: 50px;
+        margin-top: 47px;
+        right: 0;
         position: absolute;
         background-color: #333;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -650,12 +671,13 @@ footer {
         top: 0;
         left: 0;
         width: 100%;
-        height: 723px;
-        background-image: url('images/test2.jpg');
+        height: 100%;
+        background-image: url('/images/background.jpg');
         background-size: cover;
         background-position: 50% 50%;
         z-index: -1; 
         opacity: 0.9;
+        filter: brightness(0.5);
     }
 
     .large-text {
@@ -669,8 +691,20 @@ footer {
         font-size: 1rem;
     }
 
+    .timer {
+        height: 125px;
+    }
+
+    #countdown {
+        font-size: 2rem;
+    }
+
+    .timertext {
+        font-size: 18px;
+    }
+
     .inner-container {
-        min-height: 1577px;
+        height: 100%;
     }
 
     .additional-container,
@@ -686,22 +720,20 @@ footer {
         padding: 0;
         margin: 0;
         border: 0;
-        width: 100%;
-        height: auto;
-        min-height: 1577px;
     }
 
     .posts {
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         width: auto;
         height: auto;
+        height: 100%;
     }
 
     .post {
         width: 350px;
-        height: auto;
+        height: 250px;
         flex-basis: auto;
         margin: 15px 0;
     }
@@ -741,14 +773,13 @@ footer {
     .split-container {
         display: flex;
         flex-direction: column;
-        min-height: 1077px;
+        min-height: 877px;
     }
 
     .left-box,
     .right-box {
-        min-width: auto;
+        width: 100%;
         flex: 1;
-        max-height: 713px;
     }
 
     .left-box {
@@ -756,10 +787,17 @@ footer {
         flex-direction: column;
         align-items: center;
         padding: 0;
+        max-height: 550px;
+    }
+
+    .right-box{ 
+        padding: 0;
+        height: 370px;
     }
 
     .inner-box {
         max-width: 100%;
+        height: auto;
     }
 
     .inner-box .sub-box {
@@ -793,8 +831,7 @@ footer {
     .sub-box:nth-child(2) .sub-sub-box,
     .sub-box:nth-child(3) .sub-sub-box {
         width: 80%;
-        height: auto;
-        min-height: 150px;
+        min-height: 100px;
         max-height: none;
         display: flex;
         flex-direction: column;
@@ -820,8 +857,39 @@ footer {
         object-fit: cover;
     }
 
+    .nasatext {
+        margin-top: 7%;
+        margin-left: 5%;
+        margin-bottom: 7%;
+    }
+
+    .nasainfo {
+        height: auto;
+    }
+
+    .maptext {
+        height: 50px;
+        font-size: 18px;
+    }
+
+    #map {
+        width: 100%;
+        height: 400px; 
+    }
+
     footer {
         height: auto;
         padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .split-container {
+        max-height: 620px;
+    }
+    
+    .left-box,
+    .right-box {
+        max-height: 620px;
     }
 }

@@ -1,0 +1,294 @@
+@media only screen and (max-width: 1024px) {
+    
+    .header {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        margin: auto;
+    }
+    
+    #logo:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        height: 55px;
+        width: 55px;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    #headername {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .header-container {
+        display: flex;
+        margin: auto;
+    }
+
+    .dropdown-content {
+        display: none;
+        margin-top: 57px;
+        margin-right: 15px;
+        right: 0;
+        position: absolute;
+        background-color: #333;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .content-container {
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 767px;
+        min-width: 350px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        right: 0;
+    }
+
+    #scrollToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 19px;
+        right: 19px;
+        background-color: rgb(24, 24, 24);
+        color: #ffffff;
+        border: none;
+        border-radius: 50px;
+        padding: 3% 3.5%;
+        cursor: pointer;
+        z-index: 500;
+    }
+
+    .container {
+        margin-top: 0; 
+        position: relative;
+        width: 100%;
+        height: 560px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .background-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/images/background.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+        z-index: -1; 
+        opacity: 0.9;
+        filter: brightness(0.5);
+    }
+
+    .large-text {
+        display: flex;
+        text-align: center;
+        width: auto;
+        font-size: 2.5rem;
+    }
+
+    .small-text {
+        font-size: 1rem;
+    }
+
+    .timer {
+        height: 125px;
+    }
+
+    #countdown {
+        font-size: 2rem;
+    }
+
+    .timertext {
+        font-size: 18px;
+    }
+
+    .inner-container {
+        height: 100%;
+    }
+
+    .additional-container,
+    .posts,
+    .post {
+        width: 100%;
+    }
+
+    .additional-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    .posts {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        height: auto;
+        height: 100%;
+    }
+
+    .post {
+        width: 350px;
+        height: 350px;
+        flex-basis: auto;
+        margin: 15px 0;
+    }
+
+    .post img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .post p,
+    .postauthor,
+    .postinfo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .post p {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .postinfo h4 {
+        margin-left: 0;
+    }
+
+    .postauthor,
+    .postinfo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .postinfo {
+        justify-content: right;
+    }
+
+    .split-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 1077px;
+    }
+
+    .left-box,
+    .right-box {
+        width: 100%;
+        flex: 1;
+    }
+
+    .left-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        max-height: 550px;
+    }
+
+    .right-box{ 
+        padding: 0;
+        height: auto;
+    }
+
+    .inner-box {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .inner-box .sub-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sub-box:first-child {
+        height: auto;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        font-size: 28px;
+    }
+
+    .sub-box:nth-child(2),
+    .sub-box:nth-child(3) {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-box:nth-child(2) .sub-sub-box,
+    .sub-box:nth-child(3) .sub-sub-box {
+        width: 80%;
+        min-height: 100px;
+        max-height: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        font-size: 18px;
+    }
+
+    .sub-sub-box {
+        transition: none;
+    }
+
+    .right-box img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .nasatext {
+        margin-top: 7%;
+        margin-left: 5%;
+        margin-bottom: 7%;
+    }
+
+    .nasainfo {
+        height: auto;
+    }
+
+    .maptext {
+        height: 50px;
+        font-size: 18px;
+    }
+
+    #map {
+        width: 100%;
+        height: 400px; 
+    }
+
+    footer {
+        height: auto;
+        padding: 10px 0;
+    }
+}

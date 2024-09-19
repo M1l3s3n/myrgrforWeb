@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     scrollToPosts.addEventListener('click', function() {
        
-        if (window.innerWidth <= 767) {
+        if (window.innerWidth <= 1024) {
             var littlePosts = document.querySelector('.allposts');
             littlePosts.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } else {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var projects = document.querySelector('.split-container');
 
     scrollToProjects.addEventListener('click', function() {
-        if (window.innerWidth <= 767) {
+        if (window.innerWidth <= 1024) {
             var leftBox = document.querySelector('.left-box');
             leftBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } else {

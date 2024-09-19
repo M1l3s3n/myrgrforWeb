@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     scrollToContactButton.addEventListener('click', function() {
        
-        if (window.innerWidth <= 767) {
-            var littleContactBox = document.querySelector('.posts');
-            littleContactBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (window.innerWidth <= 1024) {
+            var littleContactBox = document.querySelector('.allposts');
+            littleContactBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } else {
             contactBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }

@@ -18,10 +18,10 @@ function changeImage() {
             slideshow.style.opacity = 1;
             slideshowBack.style.opacity = 0;
             index = nextIndex;
-        }, 1000); // Тривалість анімації
-    }, 1000); // Затримка для того, щоб заднє зображення стало видимим
+        }, 1000);
+    }, 1000);
 }
 
 window.onload = () => {
-    setInterval(changeImage, 8500);
+    setInterval(changeImage, 6500);
 };
