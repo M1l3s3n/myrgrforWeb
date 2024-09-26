@@ -893,3 +893,37 @@ footer {
         max-height: 620px;
     }
 }
+
+@media only screen and (min-width: 1401px) {
+    .split-container {
+        max-height: none;
+        height: 810px;
+    }
+
+    .left-box,
+    .right-box {
+        max-height: none;
+    }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 1400px) {
+    .split-container {
+        height: auto;
+        min-height: 620px;
+    }
+
+    .left-box,
+    .right-box {
+        min-height: 310px;
+    }
+
+    .inner-box {
+        height: auto;
+    }
+
+    .sub-box:nth-child(2) .sub-sub-box,
+    .sub-box:nth-child(3) .sub-sub-box {
+        min-height: 200px;
+        max-height: none;
+    }
+}
