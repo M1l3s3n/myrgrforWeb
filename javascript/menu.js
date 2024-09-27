@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     var scrollToPosts = document.querySelector('.button-1');
-    var posts = document.querySelector('.posts');
+    var posts = document.querySelector('.allposts');
 
     scrollToPosts.addEventListener('click', function() {
        
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var littlePosts = document.querySelector('.allposts');
             littlePosts.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } else {
-            posts.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            posts.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
 });

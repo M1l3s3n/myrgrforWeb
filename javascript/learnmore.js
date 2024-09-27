@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var scrollToContactButton = document.querySelector('.scroll-to-contact');
-    var contactBox = document.querySelector('.posts');
+    var contactBox = document.querySelector('.allposts');
 
     scrollToContactButton.addEventListener('click', function() {
        
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var littleContactBox = document.querySelector('.allposts');
             littleContactBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } else {
-            contactBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            contactBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
         
     });
