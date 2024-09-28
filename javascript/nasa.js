@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const nasaSection = document.querySelector('.nasa');
-    const triggerHeight = 2845;
+    const triggerHeight = 2645;
     const offset = 200;
     const maxOpacity = 0.5;
 
