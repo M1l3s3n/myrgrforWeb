@@ -1,4 +1,3 @@
-// Коли сторінка повністю завантажена
 window.addEventListener('load', function() {
     var preloader = document.getElementById('preloader');
     var content = document.querySelector('.content');

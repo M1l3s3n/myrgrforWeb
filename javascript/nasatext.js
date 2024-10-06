@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const sentences = document.querySelectorAll('.sentence');
-    const triggerHeight = 2855;
+    const triggerHeight = 2455;
     const offset = 85;
 
     function checkVisibility() {

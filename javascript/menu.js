@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     var scrollToPosts = document.querySelector('.button-1');
-    var posts = document.querySelector('.allposts');
+    var posts = document.querySelector('.inner-container');
 
     scrollToPosts.addEventListener('click', function() {
        
