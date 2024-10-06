@@ -3,16 +3,16 @@ document.addEventListener("DOMContentLoaded", function() {
     var dropdownContent = document.getElementById("dropdown-content");
 
     dropdownBtn.addEventListener("mouseover", function() {
-        dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+        dropdownContent.classList.toggle("show");
     });
 
     dropdownBtn.addEventListener("click", function() {
-        dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+        dropdownContent.classList.toggle("show");
     });
 
     document.addEventListener("click", function(event) {
-        if (!event.target.matches("#dropdown-btn") && !event.target.matches("#dropdown-content")) {
-            dropdownContent.style.display = "none";
+        if (!event.target.closest("#dropdown-btn") && !event.target.closest("#dropdown-content")) {
+            dropdownContent.classList.remove("show");
         }
     });
 });

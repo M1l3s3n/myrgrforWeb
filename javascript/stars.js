@@ -23,5 +23,5 @@ function changeImage() {
 }
 
 window.onload = () => {
-    setInterval(changeImage, 6500);
+    setInterval(changeImage, 5500);
 };
