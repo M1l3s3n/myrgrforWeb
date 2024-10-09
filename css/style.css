@@ -627,6 +627,11 @@ footer {
     display: inline-block;
 }
 
+.copyright {
+    text-decoration: none;
+    color: white;
+}
+
 .leaflet-tile-pane {
     filter: grayscale(100%);
     transition: filter 0.3s ease;
